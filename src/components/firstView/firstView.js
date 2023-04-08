@@ -1,0 +1,22 @@
+import Image from "next/image";
+
+const FirstView = () => {
+  return (
+    <div className=" bg-teal-200 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-4 sm:ml-10 sm:mt-0">
+        <h1 className="text-center sm:text-left py-4 px-4 text-6xl text-white">メインタイトル</h1>
+        <h2 className="text-center sm:text-left py-4 px-4 text-4xl text-white">サブタイトル</h2>
+      </div>
+      <Image
+        priority
+        src="/images/hero.png"
+        height={585}
+        width={498}
+        className="sm:mr-12"
+        alt=""
+      />
+    </div>
+  );
+}
+
+export default FirstView;
