@@ -1,38 +1,11 @@
-const { default: Image } = require("next/image");
+import Image from "next/image";
+import { footerListItems as listItems, footerImageItems as imageItems, footerSnsItems as snsItems } from "../../data/data";
 
-const Footer = () => {
-  const listItems = [
-    { id: 1, content: "お問い合わせ" },
-    { id: 2, content: "助成金について" },
-    { id: 3, content: "特定商取引法に基づく表記" },
-    { id: 4, content: "プライバシーポリシー" },
-  ];
-  const imageItems = [
-    {
-      id: 1,
-      src: "/images/logo_white.png",
-      height: "80",
-      width: "100",
-    },
-  ];
-  const snsItems = [
-    {
-      id: 1,
-      src: "/images/twitter.png",
-      height: "24",
-      width: "24",
-    },
-    {
-      id: 2,
-      src: "/images/facebook.png",
-      height: "24",
-      width: "24",
-    },
-  ];
+const Footer = ({ name, copyRight }) => {
   return (
     <footer className="bg-slate-800 flex flex-col items-center">
       <p className="hidden sm:block mt-6 text-white text-xl">
-        CREATED BY 名前 太郎
+        {`CREATED BY ${name}`}
       </p>
       <ul className="text-white flex text-sm gap-4 flex-wrap justify-center sm:hidden">
         {listItems.map((item) => (
@@ -62,7 +35,7 @@ const Footer = () => {
           />
         ))}
       </div>
-      <p className="mt-8 text-white text-xs mb-6">©︎2021 KIKAGAKU</p>
+      <p className="mt-8 text-white text-xs mb-6">{copyRight}</p>
     </footer>
   );
 };

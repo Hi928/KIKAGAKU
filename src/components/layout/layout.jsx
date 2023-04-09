@@ -4,7 +4,7 @@ import Header from "../header/header";
 
 export const siteTitle = "fwywd";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children}) {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export default function Layout({ children, home }) {
       </Head>
       <Header />
       <main className="mt-2">{children}</main>
-      <Footer />
+      <Footer name="名前 太郎" copyRight="©︎2021 KIKAGAKU"/>
     </>
   );
 }

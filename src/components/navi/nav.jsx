@@ -1,12 +1,6 @@
 import Image from "next/image";
 
-const Nav = () => {
-  const listItems = [
-    { id: 1, content: "ABOUT" },
-    { id: 2, content: "SKILLS" },
-    { id: 3, content: "VALUES" },
-    { id: 4, content: "FUTURE" },
-  ];
+const Nav = ({ listItems }) => {
   return (
     <>
       <div className="flex sm:items-center">

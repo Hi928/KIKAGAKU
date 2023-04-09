@@ -1,34 +1,12 @@
 import Image from "next/image";
+import { valueListItems as listItems } from "../../data/data";
 
-const Values = () => {
-  const listItems = [
-    {
-      id: 1,
-      images: [{ src: "/images/value1.png", height: "200", width: "200" }],
-      title: "価値観01",
-      content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
-    },
-    {
-      id: 2,
-      images: [{ src: "/images/value2.png", height: "200", width: "200" }],
-      title: "価値観02",
-      content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
-    },
-    {
-      id: 3,
-      images: [{ src: "/images/value3.png", height: "200", width: "200" }],
-      title: "価値観03",
-      content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
-    },
-  ];
+const Values = ({title, subTitle}) => {
   return (
     <div className="bg-[url('/images/bg-about.png')] bg-cover bg-center">
       <h3 className="mt-8 py-4 px-4 text-2xl text-gray-700 text-center">
-        価値観
-        <span className="text-green-700 ml-4 text-lg align-middle">VALUES</span>
+        {title}
+        <span className="block text-green-700 ml-4 text-lg align-middle sm:inline">{subTitle}</span>
       </h3>
       <ul className="flex flex-col items-center justify-center gap-12 sm:flex-row">
           {listItems.map((item)=>(

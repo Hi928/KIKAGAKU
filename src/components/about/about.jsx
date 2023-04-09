@@ -1,34 +1,12 @@
 import Image from "next/image";
+import { aboutListItems as listItems } from "../../data/data";
 
-const About = () => {
-  const listItems = [
-    {
-      id: 1,
-      images: [{ src: "/images/about-1.png", height: "184", width: "157" }],
-      title: "趣味",
-      content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
-    },
-    {
-      id: 2,
-      images: [{ src: "/images/about-2.png", height: "206", width: "158" }],
-      title: "好きな食べ物",
-      content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
-    },
-    {
-      id: 3,
-      images: [{ src: "/images/about-3.png", height: "245", width: "149" }],
-      title: "性格",
-      content:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
-    },
-  ];
+const About = ({title, subTitle}) => {
   return (
     <div className="bg-[url('/images/bg-about.png')] bg-cover bg-center">
       <h3 className="mt-8 py-4 px-4 text-2xl text-gray-700 text-center">
-        私について
-        <span className="text-green-700 ml-4 text-lg align-middle">ABOUT</span>
+        {title}
+        <span className="block text-green-700 ml-4 text-lg align-middle sm:inline">{subTitle}</span>
       </h3>
       <ul className="sm:flex flex-row justify-center items-center">
         {listItems.map((item) => (
