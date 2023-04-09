@@ -1,6 +1,12 @@
 import Image from "next/image";
 
 const Nav = () => {
+  const listItems = [
+    { id: 1, content: "ABOUT" },
+    { id: 2, content: "SKILLS" },
+    { id: 3, content: "VALUES" },
+    { id: 4, content: "FUTURE" },
+  ];
   return (
     <>
       <div className="flex sm:items-center">
@@ -14,10 +20,11 @@ const Nav = () => {
         />
       </div>
       <ul className="flex gap-12 sm:items-center sm:gap-8 sm:mr-4">
-        <li className="text-cyan-600">ABOUT</li>
-        <li className="text-cyan-600">SKILLS</li>
-        <li className="text-cyan-600">VALUES</li>
-        <li className="text-cyan-600">FUTURE</li>
+        {listItems.map((item) => (
+          <li key={item.id} className="text-cyan-600">
+            {item.content}
+          </li>
+        ))}
       </ul>
     </>
   );
