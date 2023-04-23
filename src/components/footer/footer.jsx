@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { footerListItems as listItems, footerImageItems as imageItems, footerSnsItems as snsItems } from "../../data/data";
 
-const Footer = ({ name, copyRight }) => {
+export const Footer = ({ name, copyRight }) => {
   return (
     <footer className="bg-slate-800 flex flex-col items-center">
       <p className="hidden sm:block mt-6 text-white text-xl">
@@ -39,5 +39,3 @@ const Footer = ({ name, copyRight }) => {
     </footer>
   );
 };
-
-export default Footer;

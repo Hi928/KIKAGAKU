@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const FirstView = (props) => {
+export const FirstView = (props) => {
   return (
     <div className=" bg-teal-200 flex flex-col sm:flex-row sm:items-center sm:justify-between">
       <div className="mt-4 sm:ml-10 sm:mt-0">
@@ -18,5 +18,3 @@ const FirstView = (props) => {
     </div>
   );
 }
-
-export default FirstView;

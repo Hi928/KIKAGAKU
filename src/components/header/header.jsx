@@ -1,13 +1,11 @@
-import Nav from "../navi/nav";
+
 import { headerListItems as listItems } from "../../data/data";
+import { Navi } from "../Navi/Navi";
 
-const Header = () => {
-
+export const Header = () => {
   return (
     <header className="h-24 bg-white flex flex-col items-center sm:flex-row sm:justify-between">
-      <Nav listItems={listItems} />
+      <Navi listItems={listItems} />
     </header>
   );
 };
-
-export default Header;

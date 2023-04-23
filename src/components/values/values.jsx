@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { valueListItems as listItems } from "../../data/data";
 
-const Values = ({title, subTitle}) => {
+export const Values = ({title, subTitle}) => {
   return (
     <div className="bg-[url('/images/bg-about.png')] bg-cover bg-center">
       <h3 className="mt-8 py-4 px-4 text-2xl text-gray-700 text-center">
@@ -33,4 +33,3 @@ const Values = ({title, subTitle}) => {
   );
 };
 
-export default Values;

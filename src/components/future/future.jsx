@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { futureListItems as listItems } from "../../data/data";
 
-const Future = ({ title, subTitle }) => {
+export const Future = ({ title, subTitle }) => {
   return (
     <div className="bg-[url('/images/bg-future.png')] bg-cover bg-center mt-24 h-96">
       <h3 className="py-4 px-4 text-2xl text-gray-700 text-center">
@@ -39,5 +39,3 @@ const Future = ({ title, subTitle }) => {
     </div>
   );
 };
-
-export default Future;

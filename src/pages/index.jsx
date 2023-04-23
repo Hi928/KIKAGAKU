@@ -1,10 +1,12 @@
 import { Inter } from "next/font/google";
-import Layout from "../components/layout/layout";
-import FirstView from "../components/firstView/firstView";
-import About from "../components/about/about";
-import Skills from "../components/skills/skills";
-import Values from "../components/values/values";
-import Future from "../components/future/future";
+
+
+import { About } from "../components/About/about";
+import { FirstView } from "../components/FirstView/firstView";
+import { Future } from "../components/Future/future";
+import { Skills } from "../components/Skills/skills";
+import { Values } from "../components/Values/values";
+import { Layout } from "../components/Layout/layout";
 
 const inter = Inter({ subsets: ["latin"] });
 

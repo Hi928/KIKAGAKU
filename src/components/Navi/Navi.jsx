@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Nav = ({ listItems }) => {
+export const Navi = ({ listItems }) => {
   return (
     <>
       <div className="flex sm:items-center">
@@ -23,5 +23,3 @@ const Nav = ({ listItems }) => {
     </>
   );
 };
-
-export default Nav;
