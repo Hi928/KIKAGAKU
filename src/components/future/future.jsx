@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { futureListItems as listItems } from "../../data/data";
 
-export const Future = ({ title, subTitle }) => {
+export const Future = (props) => {
   return (
     <div className="bg-[url('/images/bg-future.png')] bg-cover bg-center mt-24 h-96">
       <h3 className="py-4 px-4 text-2xl text-gray-700 text-center">
-        {title}
+        {props.title}
         <span className="block text-green-700 ml-4 text-lg align-middle sm:inline">
-          {subTitle}
+          {props.subTitle}
         </span>
       </h3>
       <ul className="flex flex-col items-center justify-center sm:gap-12 sm:flex-row">

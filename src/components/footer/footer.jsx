@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { footerListItems as listItems, footerImageItems as imageItems, footerSnsItems as snsItems } from "../../data/data";
 
-export const Footer = ({ name, copyRight }) => {
+export const Footer = (props) => {
   return (
     <footer className="bg-slate-800 flex flex-col items-center">
       <p className="hidden sm:block mt-6 text-white text-xl">
-        {`CREATED BY ${name}`}
+        {`CREATED BY ${props.name}`}
       </p>
       <ul className="text-white flex text-sm gap-4 flex-wrap justify-center sm:hidden">
         {listItems.map((item) => (
@@ -35,7 +35,7 @@ export const Footer = ({ name, copyRight }) => {
           />
         ))}
       </div>
-      <p className="mt-8 text-white text-xs mb-6">{copyRight}</p>
+      <p className="mt-8 text-white text-xs mb-6">{props.copyRight}</p>
     </footer>
   );
 };

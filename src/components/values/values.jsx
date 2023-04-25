@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { valueListItems as listItems } from "../../data/data";
 
-export const Values = ({title, subTitle}) => {
+export const Values = (props) => {
   return (
     <div className="bg-[url('/images/bg-about.png')] bg-cover bg-center">
       <h3 className="mt-8 py-4 px-4 text-2xl text-gray-700 text-center">
-        {title}
-        <span className="block text-green-700 ml-4 text-lg align-middle sm:inline">{subTitle}</span>
+        {props.title}
+        <span className="block text-green-700 ml-4 text-lg align-middle sm:inline">{props.subTitle}</span>
       </h3>
       <ul className="flex flex-col items-center justify-center gap-12 sm:flex-row">
           {listItems.map((item)=>(

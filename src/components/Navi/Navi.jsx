@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const Navi = ({ listItems }) => {
+export const Navi = (props) => {
   return (
     <>
       <div className="flex sm:items-center">
@@ -14,7 +14,7 @@ export const Navi = ({ listItems }) => {
         />
       </div>
       <ul className="flex gap-12 sm:items-center sm:gap-8 sm:mr-4">
-        {listItems.map((item) => (
+        {props.listItems.map((item) => (
           <li key={item.id} className="text-cyan-600">
             {item.content}
           </li>
