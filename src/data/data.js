@@ -5,6 +5,7 @@ export const aboutListItems = [
     title: "趣味",
     content:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
+    alt:"趣味"
   },
   {
     id: 2,
@@ -12,6 +13,8 @@ export const aboutListItems = [
     title: "好きな食べ物",
     content:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
+    alt:"好きな食べ物"
+      
   },
   {
     id: 3,
@@ -19,6 +22,7 @@ export const aboutListItems = [
     title: "性格",
     content:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
+    alt:"性格"
   },
 ];
 
@@ -34,6 +38,7 @@ export const footerImageItems = [
     src: "/images/logo_white.png",
     height: "80",
     width: "100",
+    alt: "ロゴ"
   },
 ];
 export const footerSnsItems = [
@@ -42,12 +47,14 @@ export const footerSnsItems = [
     src: "/images/twitter.png",
     height: "24",
     width: "24",
+    alt:"twitter"
   },
   {
     id: 2,
     src: "/images/facebook.png",
     height: "24",
     width: "24",
+    alt:"facebook"
   },
 ];
 
@@ -61,7 +68,7 @@ export const futureListItems = [
   ,
   {
     id: 2,
-    images: [{ src: "/images/future.png", height: "480", width: "251" }],
+    images: [{ src: "/images/future.png", height: "480", width: "251", alt:"future" }],
     content: "",
   },
 ];
@@ -76,7 +83,7 @@ export const headerListItems = [
 export const skillsListItems = [
   {
     id: 1,
-    images: [{ src: "/images/skill.png", height: "535", width: "372" }],
+    images: [{ src: "/images/skill.png", height: "535", width: "372", alt:"skill1" }],
     content: "",
   },
   {
@@ -90,21 +97,21 @@ export const skillsListItems = [
 export const valueListItems = [
   {
     id: 1,
-    images: [{ src: "/images/value1.png", height: "200", width: "200" }],
+    images: [{ src: "/images/value1.png", height: "200", width: "200",alt:"value01" }],
     title: "価値観01",
     content:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
   },
   {
     id: 2,
-    images: [{ src: "/images/value2.png", height: "200", width: "200" }],
+    images: [{ src: "/images/value2.png", height: "200", width: "200",alt:"value02" }],
     title: "価値観02",
     content:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",
   },
   {
     id: 3,
-    images: [{ src: "/images/value3.png", height: "200", width: "200" }],
+    images: [{ src: "/images/value3.png", height: "200", width: "200",alt:"value03"}],
     title: "価値観03",
     content:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ducimus labore error voluptatum, cupiditate commodi nulla assumenda magni optio aliquid consequatur iste nihil voluptas at sequi, recusandae temporibus. Ab, qui?",

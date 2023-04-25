@@ -9,8 +9,8 @@ export const Navi = ({ listItems }) => {
           src="/images/logo.png"
           height={180}
           width={144}
+          alt="ロゴ"
           className="items-center"
-          alt=""
         />
       </div>
       <ul className="flex gap-12 sm:items-center sm:gap-8 sm:mr-4">

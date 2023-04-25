@@ -24,7 +24,7 @@ export const Future = ({ title, subTitle }) => {
                     src={image.src}
                     height={image.height}
                     width={image.width}
-                    alt=""
+                    alt={image.alt}
                   />
                 ))
               : false}
