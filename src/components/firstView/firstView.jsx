@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 
 export const FirstView = (props) => {
   return (
@@ -17,4 +18,4 @@ export const FirstView = (props) => {
       />
     </div>
   );
-}
+};

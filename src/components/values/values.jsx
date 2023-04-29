@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { valueListItems as listItems } from "../../data/data";
+import React from "react";
 
 export const Values = (props) => {
   return (

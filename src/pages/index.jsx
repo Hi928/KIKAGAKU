@@ -1,6 +1,5 @@
+import React from "react";
 import { Inter } from "next/font/google";
-
-
 import { About } from "../components/About/about";
 import { FirstView } from "../components/FirstView/firstView";
 import { Future } from "../components/Future/future";

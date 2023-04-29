@@ -1,6 +1,7 @@
 
 import { headerListItems as listItems } from "../../data/data";
 import { Navi } from "../Navi/Navi";
+import React from "react";
 
 export const Header = () => {
   return (

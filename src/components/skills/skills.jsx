@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { skillsListItems as listItems } from "../../data/data";
+import React from "react";
 
 export const Skills = (props) => {
   return (

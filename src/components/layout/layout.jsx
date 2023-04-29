@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Footer } from "../Footer/footer";
 import { Header } from "../Header/header";
+import React from "react";
 
 export const siteTitle = "fwywd";
 
@@ -15,4 +16,4 @@ export const Layout = ({ children }) =>{
       <Footer name="名前 太郎" copyRight="©︎2021 KIKAGAKU" />
     </>
   );
-}
+};

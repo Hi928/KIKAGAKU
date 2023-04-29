@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { footerListItems as listItems, footerImageItems as imageItems, footerSnsItems as snsItems } from "../../data/data";
+import React from "react";
 
 export const Footer = (props) => {
   return (

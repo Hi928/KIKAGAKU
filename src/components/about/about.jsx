@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 import { aboutListItems as listItems } from "../../data/data";
 
 export const About = (props) => {
