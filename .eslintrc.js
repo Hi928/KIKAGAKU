@@ -7,18 +7,27 @@ module.exports = {
     "overrides": [
     ],
     "parserOptions": {
-        "ecmaFeatures" : {
-            "jsx":true
+        "ecmaFeatures": {
+            "jsx": true
         },
         "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
-    "extends": "plugin:react/recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended",
+        "prettier"
+    ],
     "rules": {
-        "semi": ["error", "always"],
-        "quotes": ["error", "double"],
         "react/prop-types": "off"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 };
