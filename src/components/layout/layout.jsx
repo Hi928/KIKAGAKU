@@ -5,7 +5,7 @@ import React from "react";
 
 export const siteTitle = "fwywd";
 
-export const Layout = ({ children }) =>{
+export const Layout = ({ children }) => {
   return (
     <>
       <Head>
